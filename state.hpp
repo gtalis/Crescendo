@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
+#include <cmath> // std::pow, std::ceil
+
 class State {
 public:
 	State();
