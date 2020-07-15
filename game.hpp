@@ -36,4 +36,10 @@ private:
 
 	std::map<std::string, sf::Texture> textures;
 	std::map<std::string, sf::SoundBuffer> soundBuffers;
+
+private:
+#ifdef __linux__
+	std::string rsrcDir;
+	void getResourceDir();
+#endif
 };
